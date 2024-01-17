@@ -4,3 +4,11 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+anyhow = "1.0.79"
+cidr = "0.2.2"
+clap = { version = "4.4.18", features = ["derive", "env"] }
+env_logger = "0.10.1"
+log = "0.4.20"
+poem = "2.0.0"
+poem-openapi = { version = "4.0.0", features = ["swagger-ui"] }
+tokio = { version = "1.35.1", default-features = false, features = ["macros", "signal", "rt-multi-thread"] }
